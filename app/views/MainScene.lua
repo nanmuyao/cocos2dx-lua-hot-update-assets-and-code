@@ -28,6 +28,7 @@ function MainScene:onCreate()
             print("oid",oid)
         end
 
+        --获得可读写目录
         local avilibalPath = cc.FileUtils:getInstance():getWritablePath()
         print("avilibalPath",avilibalPath)
 
