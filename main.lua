@@ -3,6 +3,8 @@ cc.FileUtils:getInstance():setPopupNotify(false)
 cc.FileUtils:getInstance():addSearchPath("src/")
 cc.FileUtils:getInstance():addSearchPath("src/app/views/")
 cc.FileUtils:getInstance():addSearchPath("res/")
+
+--这里添加平台相关的可读写目录
 cc.FileUtils:getInstance():addSearchPath("/Users/hanzhiqiang/Documents/")
 
 
