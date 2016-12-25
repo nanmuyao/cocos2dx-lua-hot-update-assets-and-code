@@ -3,6 +3,7 @@ local MainScene = class("MainScene", cc.load("mvc").ViewBase)
 
 require("Hero")
 
+--测试热更新使用
 function MainScene:onCreate()
     -- add background image
     display.newSprite("HelloWorld.png")
@@ -18,7 +19,7 @@ function MainScene:onCreate()
         local function nextButtonCallback(tag, sender)
             local gameData = require("GameData"):getInstance():setOid(11)
         end
-        
+
         local nextButton = cc.MenuItemFont:create("Please Click Me To Go!")
         nextButton:registerScriptTapHandler(nextButtonCallback)
         nextButton:setPosition(cc.p(200,200))
@@ -45,6 +46,10 @@ function MainScene:onCreate()
         menu:setAnchorPoint(cc.p(0,0))
         self:addChild(menu)
 
+        --lua binary test
+        ---- i  : int
+        local strInfo =  string.pack(A, "3")
+        print("fuck",strInfo)
 end
 
 return MainScene
