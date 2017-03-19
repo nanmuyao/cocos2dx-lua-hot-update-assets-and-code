@@ -1,5 +1,5 @@
 first
-insert second
+insert insert second
 second
 insert third
 third
