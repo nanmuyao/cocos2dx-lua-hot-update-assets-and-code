@@ -1,5 +1,4 @@
 first
-insert second
 second
 insert third
 third
