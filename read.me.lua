@@ -1,6 +1,1 @@
-save only one
-line
-
-delete all
-new first
-
+master delete all
